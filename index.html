@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .link-btn:hover {
+            background-color: #357abd;
+        }
+
+        .link-btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-google { background-color: #4285F4; }
+        .btn-google:hover { background-color: #3367d6; }
+
+        .btn-github { background-color: #24292e; }
+        .btn-github:hover { background-color: #1b1f23; }
+
+        .btn-wiki { background-color: #3366cc; }
+        .btn-wiki:hover { background-color: #264fa0; }
+
+        .btn-stack { background-color: #f48024; }
+        .btn-stack:hover { background-color: #d86d1b; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Choose a Link</h2>
+        
+        <div class="button-group">
+            <a href="https://www.google.com" class="link-btn btn-google">Google</a>
+            <a href="https://www.github.com" class="link-btn btn-github">GitHub</a>
+            <a href="https://www.wikipedia.org" class="link-btn btn-wiki">Wikipedia</a>
+            <a href="https://www.stackoverflow.com" class="link-btn btn-stack">Stack Overflow</a>
+        </div>
+    </div>
+
+</body>
+</html>
